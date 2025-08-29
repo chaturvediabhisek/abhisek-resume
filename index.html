@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhisek Chaturvedi | Executive Resume</title>
+  <title>Abhisek Chaturvedi – Resume</title>
 
   <!-- Meta Tags for SEO & Social Sharing -->
   <meta name="title" content="Abhisek Chaturvedi | Executive Resume">
@@ -23,14 +23,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
-    body {margin:0;font-family:'Inter',sans-serif;background:#f9fafc;color:#333;line-height:1.6;}
-    header {background:linear-gradient(135deg,#0a192f,#1e3a8a);color:#fff;padding:60px 20px;text-align:center;}
+    body {margin:0;font-family:'Inter',sans-serif;background:#f9fafc;color:#333;line-height:1.6;transition:background 0.3s,color 0.3s;}
+    body.dark-mode {background:#0f172a;color:#e2e8f0;}
+    header {background:linear-gradient(135deg,#0a192f,#1e3a8a);color:#fff;padding:60px 20px;text-align:center;position:relative;}
     header h1 {margin:0;font-size:2.8rem;font-weight:700;}
     header p {margin:10px 0;font-size:1.2rem;color:#e2e8f0;}
     nav {display:flex;justify-content:center;background:#1e293b;padding:12px;position:sticky;top:0;z-index:1000;}
     nav a {color:#fff;text-decoration:none;margin:0 15px;font-weight:600;transition:color 0.3s;}
     nav a:hover {color:#38bdf8;}
-    section {max-width:1000px;margin:auto;padding:60px 20px;}
+    section {max-width:1000px;margin:auto;padding:60px 20px;opacity:0;transform:translateY(30px);transition:all 0.6s ease;}
+    section.visible {opacity:1;transform:translateY(0);}
     h2 {font-size:1.8rem;border-left:6px solid #2563eb;padding-left:10px;margin-bottom:20px;color:#0f172a;}
     ul.timeline {list-style:none;padding:0;position:relative;}
     ul.timeline::before {content:'';position:absolute;left:20px;top:0;bottom:0;width:4px;background:#2563eb;}
@@ -46,6 +48,13 @@
     .download-btn:hover {background:#1e40af;}
     .social-icons a {margin:0 10px;color:#fff;font-size:1.5rem;transition:color 0.3s;}
     .social-icons a:hover {color:#38bdf8;}
+    .toggle-btn {position:absolute;top:15px;right:20px;background:#2563eb;color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer;}
+    .sticky-bar {position:fixed;bottom:0;width:100%;background:#1e293b;color:#fff;display:flex;justify-content:center;padding:10px;z-index:1000;}
+    .sticky-bar a {color:#fff;margin:0 15px;text-decoration:none;font-weight:600;}
+    .achievements {display:flex;justify-content:space-around;flex-wrap:wrap;margin-top:30px;}
+    .achievement {background:#1e40af;color:#fff;border-radius:12px;padding:20px;flex:1;min-width:180px;margin:10px;text-align:center;}
+    .qr-section {text-align:center;margin-top:40px;}
+    .qr-section img {width:120px;height:120px;margin-top:10px;}
   </style>
 </head>
 <body>
@@ -53,6 +62,7 @@
     <h1>Abhisek Chaturvedi</h1>
     <p>Associate Vice President | Senior Thought Leader | IT & Operations</p>
     <p><a href="mailto:chaturvedi.abhisek@gmail.com" style="color:#38bdf8;">chaturvedi.abhisek@gmail.com</a> | +91-9712934643</p>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Toggle</button>
   </header>
 
   <nav>
@@ -74,14 +84,11 @@
 
   <section id="highlights">
     <h2>Career Highlights</h2>
-    <div class="card">
-      <ul>
-        <li>Drove yearly revenue of $52M for technical support/consulting accounts, improving ROI from 37% to 42% YoY.</li>
-        <li>Delivered $15M global shared services project within 2.5 years, creating GCC & COE with robust compliance frameworks.</li>
-        <li>Implemented Workday SaaS migration from SAP, integrating 20+ apps, improving employee experience by +12%.</li>
-        <li>Managed global teams up to 800 FTEs; directed 90+ stakeholders for Workday implementation.</li>
-        <li>Reduced dependency by 80 FTEs via digitization and process improvements while maintaining service quality.</li>
-      </ul>
+    <div class="achievements">
+      <div class="achievement"><h3>$52M+</h3><p>Portfolio Managed</p></div>
+      <div class="achievement"><h3>800+</h3><p>FTE Global Teams</p></div>
+      <div class="achievement"><h3>+42%</h3><p>YoY Growth</p></div>
+      <div class="achievement"><h3>18+ Years</h3><p>Experience</p></div>
     </div>
   </section>
 
@@ -153,7 +160,38 @@
         📄 View My Resume (PDF)
       </a>
     </p>
+    <div class="qr-section">
+      <p>📱 Scan to view this resume online:</p>
+      <img src="qr_code_web.png" alt="QR Code to Online Resume">
+    </div>
   </section>
+
+  <div class="sticky-bar">
+    <a href="mailto:chaturvedi.abhisek@gmail.com">Email</a> |
+    <a href="https://www.linkedin.com/in/abhisek-chaturvedi-44a7136" target="_blank">LinkedIn</a> |
+    <a href="Abhisek_Chaturvedi_Resume.pdf" target="_blank">Download Resume</a>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    }
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark-mode');
+    }
+
+    // Reveal sections on scroll
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('section').forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+          section.classList.add('visible');
+        }
+      });
+    });
+  </script>
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
