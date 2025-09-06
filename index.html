@@ -1,29 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhisek Chaturvedi – Resume</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="title" content="Abhisek Chaturvedi | Executive Resume">
-  <meta name="description" content="Senior IT & Operations Leader with 18+ years driving digital transformation, shared services, and global delivery.">
-  <meta name="keywords" content="Abhisek Chaturvedi, IT Leader, Digital Transformation, Shared Services, Executive Resume, Global Delivery, HRIS, Workday, P&L, Operations Leader">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://chaturvediabhisek.github.io/abhisek-resume/">
-  <meta property="og:title" content="Abhisek Chaturvedi | Executive Resume">
-  <meta property="og:description" content="Senior IT & Operations Leader | Global Shared Services | Digital Transformation | P&L Leadership">
-  <meta property="og:image" content="https://avatars.githubusercontent.com/u/9919?s=200&v=4">
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Abhisek Chaturvedi | Executive Resume">
-  <meta property="twitter:description" content="Explore my online resume: leadership in IT, operations, HRIS, and global delivery.">
-  <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/9919?s=200&v=4">
-
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Abhisek Chaturvedi – Resume</title>
+<!-- SEO Meta Tags -->
+<meta content="Abhisek Chaturvedi | Executive Resume" name="title"/>
+<meta content="Senior IT &amp; Operations Leader with 18+ years driving digital transformation, shared services, and global delivery." name="description"/>
+<meta content="Abhisek Chaturvedi, IT Leader, Digital Transformation, Shared Services, Executive Resume, Global Delivery, HRIS, Workday, P&amp;L, Operations Leader" name="keywords"/>
+<meta content="website" property="og:type"/>
+<meta content="https://chaturvediabhisek.github.io/abhisek-resume/" property="og:url"/>
+<meta content="Abhisek Chaturvedi | Executive Resume" property="og:title"/>
+<meta content="Senior IT &amp; Operations Leader | Global Shared Services | Digital Transformation | P&amp;L Leadership" property="og:description"/>
+<meta content="https://avatars.githubusercontent.com/u/9919?s=200&amp;v=4" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="Abhisek Chaturvedi | Executive Resume" property="twitter:title"/>
+<meta content="Explore my online resume: leadership in IT, operations, HRIS, and global delivery." property="twitter:description"/>
+<meta content="https://avatars.githubusercontent.com/u/9919?s=200&amp;v=4" property="twitter:image"/>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
     body {margin:0;font-family:'Inter',sans-serif;background:#f9fafc;color:#333;line-height:1.6;transition:background 0.3s,color 0.3s;}
     body.dark-mode {background:#0f172a;color:#e2e8f0;}
     header {background:linear-gradient(135deg,#0a192f,#1e3a8a);color:#fff;padding:60px 20px;text-align:center;position:relative;}
@@ -55,131 +53,268 @@
     .qr-section {text-align:center;margin-top:40px;}
     .qr-section img {width:120px;height:120px;margin-top:10px;}
     .visitor-counter {margin-top:20px;font-size:0.9rem;color:#94a3b8;}
-  </style>
+  
+.accordion {cursor:pointer;transition:background 0.3s;}
+.accordion.active {background:#2563eb;color:#fff;}
+.panel {overflow:hidden;max-height:0;transition:max-height 0.4s ease;}
+.panel.show {padding:10px 0;}
+
+.accordion {
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  padding: 14px 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  margin: 6px 0;
+  background: #f1f5f9;
+  color: #0f172a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.accordion:hover {
+  background: #e2e8f0;
+}
+.accordion:after {
+  content: '\25BC'; /* Down arrow */
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+.accordion.active {
+  background: #2563eb;
+  color: #fff;
+}
+.accordion.active:after {
+  transform: rotate(180deg); /* Up arrow */
+}
+.panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  background: #fff;
+  border-left: 3px solid #2563eb;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.panel.show {
+  padding: 10px 14px;
+}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Abhisek Chaturvedi</h1>
-    <p>Associate Vice President | Senior Thought Leader | IT & Operations</p>
-    <p><a href="mailto:chaturvedi.abhisek@gmail.com" style="color:#38bdf8;">chaturvedi.abhisek@gmail.com</a> | +91-9712934643</p>
-    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Toggle</button>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#highlights">Highlights</a>
-    <a href="#competencies">Skills</a>
-    <a href="#softskills">Soft Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About</h2>
-    <div class="card">
-      <p>Associate Vice President and Senior Thought Leader with 18+ years of experience in service management, client management, project management, and compliance across IT, Telecommunications, and Healthcare. Trusted advisor to C-level stakeholders with proven success in global shared services, digital transformations, and P&L management.</p>
-    </div>
-  </section>
-
-  <section id="highlights">
-    <h2>Career Highlights</h2>
-    <div class="card">
-      <ul style="list-style-type: disc; padding-left: 20px;">
-        <li>Drove yearly revenue of $52M for technical support/consulting accounts, improving ROI from 37% to 42% YoY.</li>
-        <li>Delivered $15M global shared services project within 2.5 years, creating GCC & COE with robust compliance frameworks.</li>
-        <li>Implemented Workday SaaS migration from SAP, integrating 20+ apps, improving employee experience by +12%.</li>
-        <li>Managed global teams up to 800 FTEs; directed 90+ stakeholders for Workday implementation.</li>
-        <li>Reduced dependency by 80 FTEs via digitization and process improvements while maintaining service quality.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="competencies">
-    <h2>Core Competencies</h2>
-    <div class="skills-grid">
-      <div class="skill">Account Management</div>
-      <div class="skill">Project Management</div>
-      <div class="skill">Performance & Governance</div>
-      <div class="skill">People Management</div>
-      <div class="skill">Client Management</div>
-      <div class="skill">Process Reengineering</div>
-      <div class="skill">Risk & Compliance</div>
-      <div class="skill">Platforms: Workday, SAP, Jira</div>
-      <div class="skill">Six Sigma, R, Python</div>
-    </div>
-  </section>
-
-  <section id="softskills">
-    <h2>Soft Skills</h2>
-    <div class="skills-grid">
-      <div class="skill">Strategic Leadership</div>
-      <div class="skill">Stakeholder Engagement</div>
-      <div class="skill">Communication & Influence</div>
-      <div class="skill">Decision Making</div>
-      <div class="skill">Conflict Resolution</div>
-      <div class="skill">Change Management</div>
-      <div class="skill">Collaboration</div>
-      <div class="skill">Adaptability</div>
-      <div class="skill">Emotional Intelligence</div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <h2>Professional Experience</h2>
-    <ul class="timeline">
-      <li><div class="card"><strong>Assistant Vice President</strong> | DNEG | Apr 2024 – Present<br>Leading global support teams for HRIS (Workday, Asana, Google Docs).</div></li>
-      <li><div class="card"><strong>Workday Consultant/Trainer</strong> | ACTE | Dec 2022 – Apr 2024<br>Delivered advanced Workday SaaS training and consulting.</div></li>
-      <li><div class="card"><strong>Senior Program Manager</strong> | ABInBev | Sep 2019 – Dec 2022<br>Directed company-wide automation & operations excellence programs.</div></li>
-      <li><div class="card"><strong>Associate Vice President</strong> | Wipro | Sep 2017 – Mar 2019<br>Led 800+ FTE global delivery teams across Asia for IT accounts.</div></li>
-      <li><div class="card"><strong>Entrepreneur</strong> | Feb 2017 – Sep 2017<br>Founded real estate broking firm for affordable housing.</div></li>
-      <li><div class="card"><strong>Head Customer Service</strong> | Adani | Sep 2015 – Feb 2017<br>Enhanced collections from $500M to $700M with CRM automation.</div></li>
-      <li><div class="card"><strong>Sr. Manager</strong> | Godrej | Apr 2014 – Sep 2015<br>Improved sales from $50M to $65M monthly via centralized CRM.</div></li>
-      <li><div class="card"><strong>Service Delivery Lead</strong> | Wipro | Sep 2003 – Apr 2014<br>Delivered consulting projects across IT, Healthcare & Telecom in India, China & Philippines.</div></li>
-    </ul>
-  </section>
-
-  <section id="education">
-    <h2>Education & Certifications</h2>
-    <div class="card">
-      <ul>
-        <li>MBA, ICFAI (2021)</li>
-        <li>Bachelor of Commerce (2001)</li>
-        <li>Certifications: Data Science with R & Python, Advanced Machine Learning</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:chaturvedi.abhisek@gmail.com">chaturvedi.abhisek@gmail.com</a></p>
-    <p>Phone: +91-9712934643</p>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/abhisek-chaturvedi-44a7136" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/chaturvediabhisek" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
-    <p>
-      <a href="Abhisek_Chaturvedi_Resume.pdf" target="_blank" class="download-btn">
+<header>
+<h1>Abhisek Chaturvedi</h1>
+<p>Associate Vice President | Senior Thought Leader | IT &amp; Operations</p>
+<p><a href="mailto:chaturvedi.abhisek@gmail.com" style="color:#38bdf8;">chaturvedi.abhisek@gmail.com</a> | +91-9712934643</p>
+<button class="toggle-btn" onclick="toggleDarkMode()">🌙 Toggle</button>
+</header>
+<nav>
+<a href="#about">About</a>
+<a href="#competencies">Skills</a>
+<a href="#softskills">Soft Skills</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+<main>
+<section id="about">
+<h2>About</h2>
+<div class="card">
+<p>Associate Vice President and Senior Thought Leader with 18+ years of experience in service management, client management, project management, and compliance across IT, Telecommunications, and Healthcare. Trusted advisor to C-level stakeholders with proven success in global shared services, digital transformations, and P&amp;L management.</p>
+</div>
+</section>
+<section id="projects">
+<h2>Projects</h2>
+<button class="accordion">Shared Services Transformation &amp; HRIS Implementation</button>
+<div class="panel">
+<div class="panel-inner">
+<p><strong>My Role:</strong> Contributed to executive steering committees, influencing $15M program investments and operational strategy for global shared services transformation; established a GCC &amp; COE within timeline and budget.</p>
+<div class="sep"></div>
+<p><strong>Key Contributions:</strong></p>
+<p>• Led Workday SaaS implementation, migrating HR processes (Org Management, Benefits &amp; Rewards, Recruitment, Master Data, Mobility, Talent &amp; Learning) from SAP.</p>
+<p>• Directed cross-functional teams of 90+ stakeholders (engineers, specialists, PMO, IBM vendor developers).</p>
+<p>• Designed &amp; deployed a scalable Workday security framework with 150+ policies and 20+ integrations.</p>
+<p>• Built compliance &amp; risk management framework achieving SOX, European Council, and data privacy accreditations.</p>
+<p>• Leveraged Jira, MuleSoft, and Power BI for enterprise-wide transparency and reporting.</p>
+<p>• Reduced workforce dependency by 80 FTEs through process improvements and digitization while maintaining service quality.</p>
+<div class="sep"></div>
+<p><strong>Achievements:</strong></p>
+<p>• Boosted employee experience scores from 80% to 92% (+12%).</p>
+<p>• Delivered on time (2.5 years) and within the $15M budget.</p>
+<p>• Established a GCC &amp; COE to scale global shared services.</p>
+</div>
+</div>
+<button class="accordion">Technical Service Account Management – BPO</button>
+<div class="panel">
+<div class="panel-inner">
+<p><strong>My Role:</strong> P&amp;L accountability for a $52M/year technical support &amp; consulting portfolio (O365, Azure, MS CRM, MS Exchange). Directed global delivery and executive governance for service excellence and financial performance.</p>
+<div class="sep"></div>
+<p><strong>Key Contributions:</strong></p>
+<p>• Improved margins through cost optimization and achieved 42% YoY growth (vs. 37% prior).</p>
+<p>• Directed global delivery (800 FTEs) across India, China, Philippines, and Europe; scaled by 100 FTEs for critical incident management.</p>
+<p>• Championed SLA governance &amp; performance management, ensuring high client satisfaction.</p>
+<p>• Engaged with C-level executives via steering committees, communicating delivery success, risks, and financial performance.</p>
+<p>• Implemented Six Sigma DMAIC initiatives, driving operational efficiency and risk reduction.</p>
+<div class="sep"></div>
+<p><strong>Achievements:</strong></p>
+<p>• Achieved 42% YoY growth (vs. 37% prior).</p>
+<p>• Scaled operations by 100 FTEs to strengthen incident management without service disruption.</p>
+<p>• Maintained strong client satisfaction through SLA governance and proactive risk management.</p>
+</div>
+</div>
+</section>
+<section id="competencies">
+<h2>Core Competencies</h2>
+<div class="skills-grid">
+<div class="skill">Account Management</div>
+<div class="skill">Project Management</div>
+<div class="skill">Performance &amp; Governance</div>
+<div class="skill">People Management</div>
+<div class="skill">Client Management</div>
+<div class="skill">Process Reengineering</div>
+<div class="skill">Risk &amp; Compliance</div>
+<div class="skill">Platforms: Workday, SAP, Jira</div>
+<div class="skill">Six Sigma, R, Python</div>
+</div>
+</section>
+<section id="softskills">
+<h2>Soft Skills</h2>
+<div class="skills-grid">
+<div class="skill">Strategic Leadership</div>
+<div class="skill">Stakeholder Engagement</div>
+<div class="skill">Communication &amp; Influence</div>
+<div class="skill">Decision Making</div>
+<div class="skill">Conflict Resolution</div>
+<div class="skill">Change Management</div>
+<div class="skill">Collaboration</div>
+<div class="skill">Adaptability</div>
+<div class="skill">Emotional Intelligence</div>
+</div>
+</section>
+<!-- Professional Experience Section -->
+<section id="experience">
+<h2>Professional Experience</h2>
+<button class="accordion">DNEG – Assistant Vice President | Apr 2024 – Present</button>
+<div class="panel">
+<div class="panel-inner">
+<p><strong>Responsibilities / My Role:</strong> Leading global support team of 15 Workday specialists to support &amp; maintain Workday, Asana, Google Docs; defining projects with milestones, KPIs, exit criteria; securing executive approvals &amp; budgets; governance, Workday policy management, escalation, and performance management.</p>
+<div class="sep"></div>
+<p><strong>Achievements:</strong></p>
+<p>• Legal form dissemination for tax compliance/waivers with confirmation capture, saving $0.5M in penalties.</p>
+<p>• Skill Mapping via Workday Skill Cloud with weekly updates; saved 30 FTE workload and improved assignment quality to 90% (from 81%).</p>
+<p>• Improved data quality from 88% to 98% by integrating legacy systems with Workday and creating a clean master data management system.</p>
+<p>• Automated 20 Workday reports, reducing 10 FTE workload for recurring reporting.</p>
+</div>
+</div>
+<button class="accordion">ACTE – Workday Consulting/Trainer | Dec 2022 – Apr 2024</button>
+<div class="panel">
+<div class="panel-inner">
+<p><strong>Responsibilities / My Role:</strong> Delivered advanced Workday SaaS training and consulting on Core HCM.</p>
+</div>
+</div>
+<button class="accordion">AB InBev – Senior Program Manager | Sep 2019 – Dec 2022</button>
+<div class="panel">
+<div class="panel-inner">
+<p><strong>Responsibilities / My Role:</strong> Planned &amp; delivered complex enterprise programs; prioritized automation opportunities for operations excellence; established GCC &amp; COE; led Workday modernization.</p>
+<div class="sep"></div>
+<p><strong>Achievements:</strong></p>
+<p>• Shared Services Transformation &amp; HRIS Implementation | Workday, SAP, Jira, MuleSoft, Power BI, MS Projects.</p>
+<p>• “Back to Basics” project automating transaction monitoring &amp; feedback to raise data quality to 99% (from 93%).</p>
+<p>• Streamlined 8 business processes for L&amp;D and Org Management by digitizing training, scheduling, and supervisory org clean-up.</p>
+</div>
+</div>
+<button class="accordion">Wipro – Associate Vice President | Sep 2017 – Mar 2019</button>
+<div class="panel">
+<div class="panel-inner">
+<p><strong>Responsibilities / My Role:</strong> Drove profitability, operational excellence, and client satisfaction across global technical support &amp; consulting portfolio.</p>
+<div class="sep"></div>
+<p><strong>Achievements:</strong></p>
+<p>• Achieved 42% YoY margins (vs. 37% prior).</p>
+<p>• Scaled operations by 100 FTEs via efficiency, service quality, and client relationships.</p>
+<p>• Improved CSAT from 92% to 96%; maintained 90%+ internal quality scores month-to-month.</p>
+<p>• Reduced attrition to 5% and improved seat utilization from 1.3 to 1.5.</p>
+</div>
+</div>
+<button class="accordion">Entrepreneur – Founder | Feb 2017 – Sep 2017</button>
+<div class="panel">
+<div class="panel-inner">
+<p><strong>Responsibilities / My Role:</strong> Founded real estate broking firm focused on affordable housing.</p>
+</div>
+</div>
+<button class="accordion">Adani – Head Customer Service | Sep 2015 – Feb 2017</button>
+<div class="panel">
+<div class="panel-inner">
+<p><strong>Responsibilities / My Role:</strong> Led 28 FTE customer care team for Adani residential housing.</p>
+<div class="sep"></div>
+<p><strong>Achievements:</strong></p>
+<p>• Increased collections portfolio from $500M to $700M through Salesforce CRM automation &amp; back-office transformation.</p>
+</div>
+</div>
+<button class="accordion">Godrej – Sr. Manager | Apr 2014 – Sep 2015</button>
+<div class="panel">
+<div class="panel-inner">
+<p><strong>Responsibilities / My Role:</strong> Led 23 FTE customer care team for Godrej Garden City residential housing.</p>
+<div class="sep"></div>
+<p><strong>Achievements:</strong></p>
+<p>• Improved sales from $50M to $65M/month by centralizing CRM and vendor management.</p>
+</div>
+</div>
+<button class="accordion">Wipro – Service Delivery Lead | Sep 2003 – Apr 2014</button>
+<div class="panel">
+<div class="panel-inner">
+<p><strong>Responsibilities / My Role:</strong> Delivered IT, Healthcare, and Telecom service delivery/consulting across India, China, and the Philippines (technical support, billing, claims adjudication).</p>
+<div class="sep"></div>
+<p><strong>Achievements:</strong></p>
+<p>• Led a 200 FTE team delivering on KPIs like CSAT, SLAs, attrition, attendance, quality, AHT.</p>
+</div>
+</div>
+</section>
+<section id="education">
+<h2>Education &amp; Certifications</h2>
+<div class="card">
+<ul>
+<li>MBA, ICFAI (2021)</li>
+<li>Bachelor of Commerce (2001)</li>
+<li>Certifications: Data Science with R &amp; Python, Advanced Machine Learning</li>
+</ul>
+</div>
+</section>
+<section class="contact" id="contact">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:chaturvedi.abhisek@gmail.com">chaturvedi.abhisek@gmail.com</a></p>
+<p>Phone: +91-9712934643</p>
+<div class="social-icons">
+<a href="https://www.linkedin.com/in/abhisek-chaturvedi-44a7136" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="https://github.com/chaturvediabhisek" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+<p>
+<a class="download-btn" href="Abhisek_Chaturvedi_Resume.pdf" target="_blank">
         📄 View My Resume (PDF)
       </a>
-    </p>
-    <div class="qr-section">
-      <p>📱 Scan to view this resume online:</p>
-      <img src="qr_code_web.png" alt="QR Code to Online Resume" loading="lazy">
-    </div>
-    <div class="visitor-counter">
-      👀 Visitors so far: <img src="https://visitor-badge.laobi.icu/badge?page_id=chaturvediabhisek.abhisek-resume" alt="Visitor Count">
-    </div>
-  </section>
-
-  <div class="sticky-bar">
-    <a href="mailto:chaturvedi.abhisek@gmail.com">Email</a> |
+</p>
+<div class="qr-section">
+<p>📱 Scan to view this resume online:</p>
+<img alt="QR Code to Online Resume" loading="lazy" src="qr_code_web.png"/>
+</div>
+<div class="visitor-counter">
+      👀 Visitors so far: <img alt="Visitor Count" src="https://visitor-badge.laobi.icu/badge?page_id=chaturvediabhisek.abhisek-resume"/>
+</div>
+</section>
+<div class="sticky-bar">
+<a href="mailto:chaturvedi.abhisek@gmail.com">Email</a> |
     <a href="https://www.linkedin.com/in/abhisek-chaturvedi-44a7136" target="_blank">LinkedIn</a> |
     <a href="Abhisek_Chaturvedi_Resume.pdf" target="_blank">Download Resume</a>
-  </div>
-
-  <!-- Scripts -->
-  <script>
+</div>
+<!-- Scripts -->
+<script>
     function toggleDarkMode() {
       document.body.classList.toggle('dark-mode');
       localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
@@ -198,23 +333,35 @@
       });
     });
   </script>
-
-  <!-- Microsoft Clarity (replace with your project ID) -->
-  <script type="text/javascript">
+<!-- Microsoft Clarity (replace with your project ID) -->
+<script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "t2rgvooglh");
   </script>
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-XXXXXXXXXX');
   </script>
-</body>
+</main><script>
+document.querySelectorAll(".accordion").forEach(button => {
+  button.addEventListener("click", () => {
+    button.classList.toggle("active");
+    const panel = button.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      panel.classList.remove("show");
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.classList.add("show");
+    }
+  });
+});
+</script></body>
 </html>
